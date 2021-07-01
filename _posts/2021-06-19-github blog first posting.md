@@ -3,9 +3,9 @@ title : "첫 블로그 포스팅"
 excerpt: "md 파일에 마크다운 문법으로 작성하여 Github 원격 저장소에 업로드"
 
 categories:
- -Blog
+ - Blog
 tags:
- -[Blog, jekyll, Github]
+ - [ Blog, jekyll, Github ]
 
 toc: true
 toc_sticky: true
