@@ -6,3 +6,21 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+@font-face {        //카페24고운밤 폰트
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+<style>         // 나눔고딕 폰트
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+</style>
+
+@font-face {        // 바른히피 폰트
+    font-family: 'Bareun_hipi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_01@1.0/Bareun_hipi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
