@@ -98,7 +98,7 @@ author:
   avatar           : "/assets/images/cookie.jpg"
   bio              : "공부 기록 블로그입니다😚"
   location         : "Seoul, Korea"
-  email            : "ehdus001225@gmail.com"
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
