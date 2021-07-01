@@ -1,9 +1,9 @@
 # main links
 main:
- # - title: "Home"
- #   url: https://dozzs.github.io
- #  - title: "Categroy"
- #    url: /categories/
+  - title: "Home"
+    url: https://dozzs.github.io/
+   - title: "Category"
+     url: /categories/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
