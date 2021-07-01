@@ -25,7 +25,7 @@ url                      : "https://dozzs.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "dozzs/dozzs.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : #"/assets/images/cookie.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -94,15 +94,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "쿠키쿠망"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "공부 기록 블로그"
+  name             : "❄쿠키쿠망❄"
+  avatar           : "/assets/images/cookie.jpg"
+  bio              : "공부 기록 블로그입니다😚"
   location         : "Seoul, Korea"
-  email            :
+  email            : "ehdus001225@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+       url: "mailto:ehdus001225@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -114,7 +114,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+       url: "https://github.com/dozzs"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -130,7 +130,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+       url: "https://github.com/dozzs"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
