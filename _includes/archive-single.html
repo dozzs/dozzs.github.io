@@ -12,20 +12,19 @@
 
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item">
-    {% if include.type == "grid" and teaser %}
-      <div>
-        <img src="{{ teaser | relative_url }}" alt="">
-        <span>
-          <a href="{{ post.url }}">{{post.title}}</a>
-        </span>
-        <small> 
-          <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d" }}
-          {% if site.category_archive.type and post.categories[0] and site.tag_archive.type and post.tags[0] %}
-            {%- include post__taxonomy.html -%}
-          {% endif %}
-        </small>
-      </div>
-    {% endif %}
+    <div>
+      
+      <span>
+        <a href="{{ post.url }}">{{post.title}}</a>
+      </span>
+      <small> 
+        <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d" }}
+        {% if site.category_archive.type and post.categories[0] and site.tag_archive.type and post.tags[0] %}
+          {%- include post__taxonomy.html -%}
+        {% endif %}
+      </small>
+    </div>
+    
     <h2 class="archive__item-title no_toc" itemprop="headline">
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
