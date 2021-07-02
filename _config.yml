@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Study Computer Programming"
+title                    : "🎄Computer Programming🎄"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "쿠키쿠망"
-description              : "Study Computer Programming"
+name                     : "☃️쿠키쿠망☃️"
+description              : "공부 기록 블로그🍧"
 url                      : "https://dozzs.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "dozzs/dozzs.github.io"
@@ -94,7 +94,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "❄쿠키쿠망❄"
+  name             : "☃️쿠키쿠망☃️"
   avatar           : "/assets/images/cookie.png"
   bio              : "공부 기록 블로그입니다😚"
   location         : "Seoul, Korea"
