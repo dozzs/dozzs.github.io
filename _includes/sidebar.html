@@ -12,7 +12,10 @@
       {% if s.nav %}{% include nav_list nav=s.nav %}{% endif %}
     {% endfor %}
     {% if page.sidebar.nav %}
-    {% include nav_list nav=page.sidebar.nav %}
+      {% include nav_list nav=page.sidebar.nav %}
+    {% endif %}
+  {% endif %}
+  </div>
 {% endif %}
 
 <!--전체 글 수를 세기 위한 연산. sum 변수에 전체 글 수 저장-->
