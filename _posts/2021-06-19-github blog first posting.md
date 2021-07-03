@@ -1,6 +1,6 @@
 ---
-title : "첫 블로그 포스팅"
-excerpt: "md 파일에 마크다운 문법으로 작성하여 Github 원격 저장소에 업로드"
+title : "[Blog] 첫 블로그 포스팅"
+excerpt: "Github page를 이용하여 블로그 만들기"
 
 categories:
  - Blog
@@ -12,11 +12,11 @@ toc_sticky: true
 
 date: 2021-06-19
 last_modified_at: 2021-06-19
-mainfont: Cafe24Oneprettynight
+mainfont: Bareun_hipi
 ---
 
 # 1. 블로그 첫 포스팅
-깃허브 블로그 페이지 만들고, 테마를 설정하는 데도 많은 시간이 걸릴정도로 많이 어려웠는데 첫 글을 포스팅을 하고 있으니 굉장히 뿌듯하다.
+깃허브 블로그 페이지 만들고, 테마를 설정하는 데도 많은 시간이 걸릴정도로 많이 어려웠는데 첫 글을 포스팅을 하고 있으니 굉장히 뿌듯하다. 정말 오랜시간이 걸렸다..😭 예쁘게 만들고싶어서 일단 페이지를 좀 꾸미고 포스팅을 할 예정이다! 아마 지금보다 더 많은 시간이 걸릴수도.. 😢
 
 # 2. 테마
 테마는 `minimal mistakes` 테마를 사용하였다.
