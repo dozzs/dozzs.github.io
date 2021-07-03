@@ -22,7 +22,7 @@
     {% if post.categories[0] != null %}
       <p class="archive__item-excerpt"> <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> {{ post.date | date: " %Y.%m.%d" }}</p>
       {% if site.category_archive.type and post.categories[0] and site.tag_archive.type and post.tags[0] %}
-        {%- include post__taxonomy.html -%}
+        {% include post__taxonomy.html %}
       {% endif %}
     {% else %}
       <p class="archive__item-excerpt"><i class="far fa-calendar-alt"></i> {{ post.date | date: "%m/%d/%Y" }}
