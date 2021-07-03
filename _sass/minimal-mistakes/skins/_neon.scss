@@ -11,14 +11,14 @@ $code-background-color: mix(rgb(137, 157, 177), $background-color, 15%) !default
 $code-background-color-dark: mix(rgb(137, 157, 177), $background-color, 20%) !default;
 $form-background-color: mix(rgb(137, 157, 177), $background-color, 15%) !default;
 $footer-background-color: mix($primary-color, rgb(8, 11, 19), 10%) !default;
-$link-color: #cc95ff !default;
+$link-color: #93ddff !default;
 $link-color-hover: mix(#fff, $link-color, 25%) !default;
 $link-color-visited: mix(#000, $link-color, 25%) !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
 $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 
-$sidebar-color: #7ccfff !default;
+
 
 /* notices */
 $notice-background-mix: 90% !default;
@@ -67,6 +67,7 @@ $base0f: #15222b !default;
 
 #page-title{
   color: $primary-color;
+  font-weight: bold;
 }
 
 #categories{
