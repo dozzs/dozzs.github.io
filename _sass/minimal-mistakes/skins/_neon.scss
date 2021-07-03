@@ -66,5 +66,11 @@ $base0f: #15222b !default;
 }
 
 #page-title{
-  color: $link-color;
+  color: $primary-color;
+}
+
+#categories{
+  color: $primary-color;
+  font-size: medium;
+  font-family: $hipi;
 }
