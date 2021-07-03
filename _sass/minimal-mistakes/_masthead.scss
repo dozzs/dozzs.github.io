@@ -25,7 +25,7 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     font-family: $cafe;
-    font-size: $type-size-8;
+    font-size: x-large;
     font-weight: bold;
 
     @include breakpoint($x-large) {
@@ -52,14 +52,14 @@
   display: flex;
   -ms-flex-item-align: center;
   align-self: center;
-  font-size: $type-size-3;
+  font-size: x-large;
   font-weight: bold;
   // z-index: 20;
 }
 
 .site-subtitle {
   display: block;
-  font-size: $type-size-3;
+  font-size: x-large;
   font-weight: bold;
 }
 
