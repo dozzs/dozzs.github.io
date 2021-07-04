@@ -19,9 +19,9 @@ mainfont: Bareun_hipi
 난이도 : ⭐ 
 
 ## ⛄ 문제
-![image](D:\github\dozzs.github.io\assets\images\pr1.png)
+![image](\assets\images\pr1.png)
 
-## ☃ 내 풀이 
+## ☃️ 내 풀이 
 ```c++
 #include <string>
 #include <vector>
