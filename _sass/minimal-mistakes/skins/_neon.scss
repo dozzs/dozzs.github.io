@@ -12,7 +12,7 @@ $code-background-color-dark: mix(rgb(137, 157, 177), $background-color, 20%) !de
 $form-background-color: mix(rgb(137, 157, 177), $background-color, 15%) !default;
 $footer-background-color: mix($primary-color, rgb(8, 11, 19), 10%) !default;
 $link-color: #93ddff !default;
-$link-color-hover: mix(#fff, $link-color, 25%) !default;
+$link-color-hover: mix(rgb(155, 182, 207), $link-color, 25%) !default;
 $link-color-visited: mix(#000, $link-color, 25%) !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
@@ -74,4 +74,8 @@ $base0f: #15222b !default;
   color: $primary-color;
   font-size: medium;
   font-family: 'Bareun_hipi';
+}
+
+#code-block{
+  color:rgb(137, 157, 177) !default;
 }
