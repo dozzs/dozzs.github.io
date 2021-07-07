@@ -354,6 +354,7 @@
       color: $gray;
       font-size: large;
       font-weight: bold;
+      color: $primary-color;
       border: 1px solid $light-gray;
       border-radius: $border-radius;
       z-index: 20;
@@ -487,7 +488,7 @@
   font-family: $sans-serif-narrow;
   font-size: large;
   font-weight: bold;
-  $font-color: #84cffa !default;
+  color: $primary-color;
 }
 
 .nav__sub-title {
