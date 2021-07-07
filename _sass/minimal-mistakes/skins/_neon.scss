@@ -57,7 +57,7 @@ $base0f: #15222b !default;
   border-color: transparent;
 
   &:visited {
-    color: $text-color;
+    color: rgb(137, 157, 177), $background-color;
   }
 }
 
