@@ -440,6 +440,7 @@
 .nav__list .nav__items {
   margin: 0;
   font-size: medium;
+  
 
   a {
     color: inherit;
@@ -486,6 +487,7 @@
   font-family: $sans-serif-narrow;
   font-size: large;
   font-weight: bold;
+  $font-color: #84cffa !default;
 }
 
 .nav__sub-title {
