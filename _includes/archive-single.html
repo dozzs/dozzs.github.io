@@ -10,6 +10,8 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% include archive-single2.html %}
+
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -29,5 +31,3 @@
 
   </article>
 </div>
-
-{% include archive-single2.html %}
