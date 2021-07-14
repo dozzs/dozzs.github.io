@@ -3,7 +3,7 @@
    ========================================================================== */
 
 /* Colors */
-$background-color: #23303a !default;
+$background-color: #2e3d49 !default;
 $text-color: #eaeaea !default;
 $primary-color: #5b99bd !default;
 $border-color: mix(#fff, $background-color, 20%) !default;
@@ -17,8 +17,6 @@ $link-color-visited: mix(#000, $link-color, 25%) !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
 $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
-
-$code-notice-background-mix: 95% !default;
 
 
 .author__urls.social-icons i,
