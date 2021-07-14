@@ -10,6 +10,8 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% assign posts = site.categories.Blog %} {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
+
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item">
     <h2 class="archive__item-title no_toc" itemprop="headline">
