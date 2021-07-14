@@ -1,11 +1,11 @@
 ---
-title: "Programmers 풀이"
+title: "Coding Test 풀이"
 layout: archive
-permalink: categories/programmers
+permalink: categories/codingtest
 author_profile: true
 sidebar_main: true
 ---
 
 
-{% assign posts = site.categories.programmers %}
+{% assign posts = site.categories.CodingTest %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
