@@ -1,144 +1,76 @@
 ---
-title : "Chapter 3 : 그리디"
-excerpt: ">이것이 취업을 위한 코딩 테스트다< 공부 필기"
+title : "[C++] 키패드 누르기 ⭐"
+excerpt: "프로그래머스 [카카오 인턴] 키패드 누르기 난이도 : ⭐"
 
 categories:
- - Algorithm
+ - Programmers
 tags:
- - [ Algorithm, Coding Test, Python, C++ ]
+ - [ Programmers, Coding Test, C++ ]
 
 toc: true
-toc_sticky: true
+toc_sticky: false
 
-date: 2021-07-22
-last_modified_at: 2021-07-22
+date: 2021-07-04
+last_modified_at: 2021-07-04
 mainfont: Bareun_hipi
 ---
 
-<이것이 취업을 위한 코딩테스트다> 책을 읽고 남긴 공부 기록입니다.
+# 프로그래머스 [카카오 인턴] 키패드 누르기 
+난이도 : ⭐ 
 
-## 1. 당장 좋은 것만 선택하는 그리디
-그리디 알고리즘은 <u>'현재 상황에서 지금 당장 좋은 것만 고르는 방법'</u>을 의미한다.
+## ⛄ 문제
+![image](D:\github\dozzs.github.io\assets\images\키패드.png)
 
-사전에 외우고 있지 않아도 풀 수 있을 가능성이 높은 문제 유형이라는 특징이 있다. 하지만 문제 유형이 매우 다양하기 때문에 항상 잘 풀 수 있는 문제는 아니다.
-사전 지식 없어도 풀 수 있는 문제도 있겠지만, 많은 유형을 접해보고 문제를 풀어보며 훈련을 해야한다.
-
-#### 예제 3-1 거스름돈
-당신은 음식점의 계산을 도와주는 점원이다. 카운터에는 거스름돈으로 사용할 500원, 100원, 50원, 10원짜리 동전이 무한히 존재한다고 가정한다. 손님에게 거슬러 줘야할 돈이 N원 일 때 거슬러 줘야할 동전의 최소 개수를 구하라. 단, 거슬러 줘야 할 돈 N은 항상 10의 배수이다.
-
-##### 문제 해설
-이 문제는 그리디 알고리즘을 이용해 풀 수 있는 대표적인 문제이다. 문제 해결 아이디어는 <u>'가장 큰 화폐 단위부터 돈을 거슬러 주는 것이다.'</u>
-
-N이 1260원이라고 가정하고 풀어보자.
-
-##### Python 풀이
-``` python
-n = 1260
-count =0
-
-coin_types = [500, 100, 50, 10]
-
-for coin in coin_types:
-    count += n // coin
-    n %= coin
-
-print(count)
-```
-
-##### C++ 풀이
+## ☃ 내 풀이 
 ```c++
-#include <iostream>
+#include <string>
+#include <vector>
+#include <cmath>
+
 using namespace std;
 
-int main() {
+string solution(vector<int> numbers, string hand) {
+    string answer = "";
 
-    int i;
-    int n = 1260, count = 0;
-    int coin[4] = { 500, 100, 50, 10 };
+    int leftHand = 10, rightHand =12, leftDist = 0, rightDist = 0;
 
-    for (i = 0; i < 4; i++) {
-        count = count + n / coin[i];
-        n = n % coin[i];
-    }
-     
-    cout <<"거슬러 줘야 할 동전의 최소 갯수는 "<< count << "개이다.";
-}
-```
-##### 실행결과 
-    거슬러 줘야 할 동전의 최소 갯수는 6개이다.
-
-##### 그리디 알고리즘의 정당성
-그리디 알고리즘을 모든 알고리즘 문제에 적용할 수 있는 것은 아니다. '최적의 해'를 찾을 수 없을 가능성이 다분하다. 하지만 거스름돈 문제에서 '가장 큰 화폐 단위부터' 돈을 거슬러 주는 것과 같이, 탐욕적으로 문제에 접근했을 때 정확한 답을 찾을 수 있다는 보장이 있을 때는 매우 효과적이고 직관적이다.
-
-그리디 알고리즘으로 문제의 해법을 찾았을 때는 그 해법이 정당한지 검토해야 한다. 거스름돈 문제를 그리디 알고리즘으로 해결할 수 있는 이유는 <u>가지고 있는 동전 중에서 큰 단위가 항상 작은 단위의 배수이므로 작은 단위의 동전들을 종합해 다른 해가 나올 수 없기 때문이다.</u> 예를 들어 800원을 거슬러 줘야하는데, 화폐단위가 500원, 400원, 100원인 경우에 그리디 알고리즘으로는 4개의 동전(500원 + 100원 + 100원 + 100원)을 거슬러 줘야 한다고 나오는데, 최적의 해는 2개의 동전(400원 + 400원)을 거슬러 주는것이기 때문이다.
-
-<u>대부분의 그리디 알고리즘 문제에서는 이처럼 문제 풀이를 위한 최소한의 아이디어를 떠올리고 이것이 정당한지 검토할 수 있어야 답을 도출할 수 있다.</u>
-
-
-## 2. [실전문제] 큰 수의 법칙 
-'큰 수의 법칙'은 일반적으로 통계 분야에서 다루어지는 내용이지만 동빈이는 본인만의 방식으로 다르게 사용하고 있다. 동빈이의 큰 수의 법칙은 다양한 수로 이루어진 배열이 있을 때 주어진 수들을 M번 더하여 가장 큰 수를 만드는 법칙이다. 단, 배열의 특정한 인덱스(번호)에 해당하는 수가 연속해서 K번을 초과하여 더해질 수 없는 것이 이 법칙의 특징이다.
-예를 들어 순서대로 2, 4, 5, 4, 6 으로 이루어진 배열이 있을 때 M이 8이고, K가 3이라고 가정하자. 이 경우 특정한 인덱스의 수가 연속해서 세 번 까지만 더해질 수 있으므로 큰 수의 법칙에 따른 결과는 6 + 6 + 6 + 5 + 6 + 6 + 6 + 5인 46이 된다.
-단, 서로 다른 인덱스에 해당하는 수가 같은 경우에도 서로 다른 것으로 간주한다. 예를 들어 순서대로 3, 4, 3, 4, 3 으로 이루어진 배열이 있을 때 M이 7이고, K가 2라고 가정하자. 이 경우 두 번째 원소에 해당하는 4와 네번째 원소에 해당하는 4를 번갈아 두 번씩 더하는 것이 가능하다. 결과적으로 4 + 4 + 4 + 4 + 4 + 4 + 4 인 28이 도출 된다.
-
-    <입력 조건>  
-    - 첫째 줄에 N(2 <= N <= 1000), M(1 <= M <= 10000), K(1 <= K <= 10000)의 자연수가 주어지며, 각 자연수는 공백으로 구분한다.
-    - 둘째 줄에 N개의 자연수가 주어진다. 각 자연수는 공백으로 구분한다. 단, 각각의 자연수는 1 이상 10000 이하의 수로 주어진다.
-    - 입력으로 주어지는 K는 항상 M보다 작거나 같다.
-    
-    <출력 조건>
-    - 첫째 줄에 동빈이의 큰 수의 법칙에 따라 더해진 답을 출력한다.
-
-##### Python 풀이
-```python
-#N, M, K를 공백으로 구분하여 입력받기
-n, m, k = map(int, input().split())
-#N개의 수를 공백으로 구분하여 입력받기
-data = list(map(int, input().split()))
-
-data.sort()     #입력받은 수 정렬
-first = data[n - 1]
-second = data[n - 2]
-
-# 가장 큰 수가 더해지는 횟수 계산
-count = int(m/(k+1)) * k
-count += m % (k+1)
-
-result = 0
-result += (count) * first # 가장 큰 수 더하기
-result += (m - count) * second # 두 번째로 큰 수 더하기
-
-print(result) # 최종 답안 출력
-```
-
-##### C++ 풀이
-```c++
-#include <iostream>
-#include <algorithm>
-using namespace std;
-
-int main() {
-    int n = 0, m = 0, k = 0, count = 0, answer = 0, i;
-    int A[1000];
-
-    scanf_s("%d %d %d", &n, &m, &k);
-
-    for (i = 0; i < n; i++) {
-        cin >> A[i];
-    }
-
-    sort(A, A + n);
-
-    for (i = 0; i < m; i++) {
-        answer += A[n-1];
-        count++;
-        if (count == k) {
-            count = 0;
-            answer += A[n-2];
-            i++;
+    for(int i=0; i< numbers.size(); i++){
+        if(numbers[i] == 1|| numbers[i] == 4||numbers[i] == 7){
+            answer += "L";
+            leftHand = numbers[i];
+        }
+        else if(numbers[i] == 3||numbers[i] == 6||numbers[i] == 9){
+            answer +="R";
+            rightHand = numbers[i];
+        }
+        else{
+            if(numbers[i]==0) numbers[i]=11;
+            int tmp_l = abs(leftHand - numbers[i]);
+            int tmp_r = abs(rightHand - numbers[i]);
+            
+            leftDist = (tmp_l/3)+(tmp_l%3);
+            rightDist = (tmp_r/3) + (tmp_r%3);
+            
+            if(leftDist == rightDist){
+                if(hand == "right"){
+                    answer +="R";
+                    rightHand=numbers[i];
+                }
+                else{
+                    answer += "L";
+                    leftHand = numbers[i];
+                }
+            }
+            else if(leftDist < rightDist){
+                answer+="L";
+                leftHand = numbers[i];
+            }
+            else{
+                answer += "R";
+                rightHand = numbers[i];
+            }
         }
     }
-    cout << answer;
+    return answer;
 }
 ```
-
-## 2. [실전문제] 숫자 카드 게임
