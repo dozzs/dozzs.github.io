@@ -19,7 +19,7 @@ mainfont: Bareun_hipi
 난이도 : ⭐ 
 
 ## ⛄ 문제
-![image](D:\github\dozzs.github.io\assets\images\키패드.png)
+![image](D:\github\vscode\dozzs.github.io\assets\images\키패드.png)
 
 ## ☃ 내 풀이 
 ```c++
